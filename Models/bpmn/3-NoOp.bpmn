@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="Definitions_0dnkkq7" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="3.0.1">
+  <bpmn:process id="NoOp" name="No operation" isExecutable="true">
+    <bpmn:startEvent id="StartEvent_1">
+      <bpmn:outgoing>SequenceFlow_0dun3jg</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:endEvent id="EndEvent_0culqdi">
+      <bpmn:incoming>SequenceFlow_0dun3jg</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="SequenceFlow_0dun3jg" sourceRef="StartEvent_1" targetRef="EndEvent_0culqdi" />
+    <bpmn:textAnnotation id="TextAnnotation_0xqzk5h">
+      <bpmn:text>This is a stubbed process to be replaced in the future by a real implementation</bpmn:text>
+    </bpmn:textAnnotation>
+    <bpmn:association id="Association_1s2fl2f" sourceRef="StartEvent_1" targetRef="TextAnnotation_0xqzk5h" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="NoOp">
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
+        <dc:Bounds x="179" y="81" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="EndEvent_0culqdi_di" bpmnElement="EndEvent_0culqdi">
+        <dc:Bounds x="422" y="81" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_0dun3jg_di" bpmnElement="SequenceFlow_0dun3jg">
+        <di:waypoint x="215" y="99" />
+        <di:waypoint x="422" y="99" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="TextAnnotation_0xqzk5h_di" bpmnElement="TextAnnotation_0xqzk5h">
+        <dc:Bounds x="216" y="167" width="213" height="59" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Association_1s2fl2f_di" bpmnElement="Association_1s2fl2f">
+        <di:waypoint x="211" y="110" />
+        <di:waypoint x="284" y="167" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>
