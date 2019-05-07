@@ -5,7 +5,7 @@
     <bpmn:participant id="Participant_0fqdamw" name="Notification system" />
     <bpmn:messageFlow id="MessageFlow_1gzhbke" sourceRef="EndEvent_1b8009l" targetRef="Participant_0fqdamw" />
   </bpmn:collaboration>
-  <bpmn:process id="SendNotification" name="Send a message via shared notification service" isExecutable="true" camunda:candidateStarterGroups="copge" camunda:isStartableInTasklist="false">
+  <bpmn:process id="SendNotification" name="Send a message" isExecutable="true" camunda:candidateStarterGroups="copge" camunda:isStartableInTasklist="true">
     <bpmn:documentation>Send a message to a group</bpmn:documentation>
     <bpmn:serviceTask id="Task_1nz8fxi" name="Initiate notification workflow" camunda:type="external" camunda:topic="create-notification">
       <bpmn:incoming>SequenceFlow_051j9ro</bpmn:incoming>
