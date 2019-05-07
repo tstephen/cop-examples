@@ -1,0 +1,47 @@
+{
+	"info": {
+		"_postman_id": "b3f1120b-9e5b-4f79-bcfe-83fd065b8228",
+		"name": "Test reference data processes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Submit change request testing approved path",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"variables\": {\n    \"referenceDataChangeRequest\" : {\n        \"value\" : \"{ \\\"dataName\\\": \\\"ports\\\", \\\"request\\\": \\\"remove Helipad at 51.4320983,-2.2177918\\\", \\\"requestorEmail\\\": \\\"tstephenson@zaizi.com\\\" }\",\n        \"type\": \"Json\"\n    }\n  },\n \"businessKey\" : \"change request destined for approval\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/engine-rest/process-definition/key/HandleReferenceDataChangeRequest/start",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"engine-rest",
+						"process-definition",
+						"key",
+						"HandleReferenceDataChangeRequest",
+						"start"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
